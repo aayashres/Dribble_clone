@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/assets/style1.css">
+</head>
+<body>
+    <h1 class="heading">Survey Form</h1>
+    <p class="paragraph">Thank you for your time to fill up this form.</p><br>
+    <div class="container">
+        <div class="form">
+            <label for="name">Name</label><br>
+            <input required class="enter" type="text" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <label for="email">Email</label><br>
+            <input required class="enter" type="text" placeholder="Enter your email">
+        </div>
+        <div class="form">
+            <label for="age">Age <span>(optional)</span></label><br>
+            <input class="enter" type="text" placeholder="Age">
+        </div>
+        <div class="form">
+            <p>Which option describes your current role the best?</p>
+            <select class="enter" name="choose" id="pick">
+                <option disabled selected value="selectcurrentrole">Select current role</option>
+                <option value="student">Student</option>
+                <option value="fulltimejob">Fulltime Job</option>
+                <option value="fulltimelearner">Fulltime Learner</option>
+                <option value="prefernottotell">Prefer Not To Tell</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form">
+            <p>Would you recommend to participate in survey to your friends?</p>
+            <input type="radio" name="friends">Definitely <br>
+            <input type="radio" name="friends">Maybe <br>
+            <input type="radio" name="friends">Not sure <br>
+        </div>
+        <div class="form">
+            <p>Which language do you speak?</p>
+            <select class="enter" name="choose" id="pick">
+                <option  disabled selected value="selectanoption">Select an option</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="portugese">Portugese</option>
+                <option value="nepali">Nepali</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form">
+            <p>How would you pass your leisure time? <span>(Multiple clicks)</span></p>
+            <input type="checkbox" value="games">Games <br>
+            <input type="checkbox" value="music">Music <br>
+            <input type="checkbox" value="coding">Coding <br>
+            <input type="checkbox" value="friends">Hangout with friends <br>
+            <input type="checkbox" value="other">Other ways <br>
+        </div>
+        <div class="form">
+            <p>Any suggestions?</p>
+            <textarea class="enter" name="" id="" cols="90" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form">
+            <button type="submit" >Submit</button>
+        </div>
+    </div>
+</body>
+</html>
